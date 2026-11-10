@@ -2,11 +2,11 @@
 # that test output is saved to the host
 
 services:
-  ffc-template-node:
+  aphw-ddi-document-reader:
     build:
       target: development
-    image: ffc-template-node-development
-    container_name: ffc-template-node-test
+    image: aphw-ddi-document-reader-development
+    container_name: aphw-ddi-document-reader-test
     command: npm run test
     volumes:
       - ./app:/home/node/app
