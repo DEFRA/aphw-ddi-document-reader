@@ -1,10 +1,10 @@
 services:
-  ffc-template-node:
+  aphw-ddi-document-reader:
     build:
       context: .
       target: production
-    image: ffc-template-node
-    container_name: ffc-template-node
+    image: aphw-ddi-document-reader
+    container_name: aphw-ddi-document-reader
     environment:
-      APPINSIGHTS_CLOUDROLE: ffc-template-node-local
+      APPINSIGHTS_CLOUDROLE: aphw-ddi-document-reader-local
       APPINSIGHTS_CONNECTIONSTRING: ${APPINSIGHTS_CONNECTIONSTRING}
